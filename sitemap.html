@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Silence Library offers a curated collection of eBooks, journals, and multimedia resources to support inclusive learning and professional development.">
+  <title>Silence Library</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- Header with logo, search panel & login -->
+  <header>
+    <nav class="navbar bg-body-white px-3">
+      <div class="container-fluid d-flex align-items-center flex-wrap">
+
+        <!-- Logo -->
+        <a class="navbar-brand me-2" href="#">
+          <img src="/assets/Silence.png" alt="Silence Library" height="40">
+        </a>
+
+        <!-- Search Panel -->
+        <form class="d-flex flex-grow-1" role="search">
+          <input class="form-control form-control-sm" type="search" placeholder="What are you looking for?"
+            aria-label="Search">
+          <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+        </form>
+
+        <!-- Login Button with spacing -->
+        <div class="ms-3">
+          <a href="/login" class="btn btn-primary btn-sm">Login</a>
+        </div>
+      </div>
+  </header>
+
+  <nav>
+    <!-- Nav -->
+    <div id="nav">
+    </div>
+  </nav>
+
+  <main>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item ms-3 mt-4"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active mt-4" aria-current="page">Site Map</li>
+      </ol>
+      </nav>
+
+
+      <div class="container-fluid container-lg pb-3 mx-auto">
+        <h4 class="text-left my-5">Site Map</h4>
+
+        <h5><a href="index.html">Home</a></h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><a href="all_books.html">All Books</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+
+        <h5>All books</h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><a href="#">Academic Journals</a></li>
+          <li><a href="all_books.html">Friction Books</a></li>
+          <li><a href="#">Non-Friction Books</a></li>
+          <li><a href="#">Professional Development Books</a></li>
+          <li><a href="#">Creative Arts Books</a></li>
+          <li><a href="#">Applied Science Books</a></li>
+        </ul>
+
+        <h5>Events</h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><a href="events.html">October Events</a></li>
+          <li><a href="#">Highlights</a></li>
+        </ul>
+
+        <h5>New Arrivals</h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><a href="#">Just Release</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Book Reviews</a></li>
+        </ul>
+
+        <h5><a href="contact.html">Contact</a></h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+        </ul>
+
+         <h5>About</h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><a href="#">Milestones</a></li>
+          <li><a href="#">Mission & Vision</a></li>
+          <li><a href="#">Our Teams</a></li>
+        </ul>
+
+        <h5><a href="privacy.html">Privacy Policy</a></h5>
+        <ul style="list-style-type: none; padding-left: 0;">
+        </ul>
+  </main>
+
+
+  <footer>
+    <div id="footer">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav").load("nav.html");
+    });
+
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+
+</body>
+
+</html>
