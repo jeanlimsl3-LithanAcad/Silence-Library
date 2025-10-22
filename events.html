@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Silence Library offers a curated collection of eBooks, journals, and multimedia resources to support inclusive learning and professional development.">
+  <title>Silence Library</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <!-- Header with logo, search panel & login -->
+  <header>
+    <nav class="navbar bg-body-white px-3">
+      <div class="container-fluid d-flex align-items-center flex-wrap">
+
+        <!-- Logo -->
+        <a class="navbar-brand me-2" href="index.html">
+          <img src="/assets/Silence.png" alt="Silence Library" height="40">
+        </a>
+
+        <!-- Search Panel -->
+        <form class="d-flex flex-grow-1" role="search">
+          <input class="form-control form-control-sm" type="search" placeholder="What are you looking for?"
+            aria-label="Search">
+          <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+        </form>
+
+        <!-- Login Button with spacing -->
+        <div class="ms-3">
+          <a href="/login" class="btn btn-primary btn-sm">Login</a>
+        </div>
+      </div>
+  </header>
+
+  <nav>
+    <!-- Nav -->
+    <div id="nav">
+    </div>
+  </nav>
+
+  <main>
+
+    <!--october events-->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item ms-3 mt-5"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active mt-5" aria-current="page">Events</li>
+      </ol>
+    </nav>
+    <div class="bg-light">
+
+      <div class="container my-5">
+        <!-- Title -->
+        <h4 class="mb-4">October Events</h4>
+
+        <!-- Two Column Layout -->
+        <div class="row">
+          <!-- Left Column: Image -->
+          <div class="col-md-6 mb-4">
+            <img src="assets/book_launch.jpg" class="img-fluid rounded shadow" alt="book launch">
+          </div>
+
+          <!-- Right Column: Information -->
+          <div class="col-md-6">
+            <h6>E-book launch.</h6><br> 
+              <h5>Singapore Sign Language: An Intro</h5>
+            <p>
+              Join us for an inspiring evening as Silence Library proudly hosts the launch of the
+              latest digital E book by acclaimed author [Author Name]. Set against the backdrop of moral
+              complexity and human resilience, this gripping story invites readers to confront difficult truths and
+              explore the boundaries of justice.<br>
+              The event will feature a live reading, author Q&A, and book signing session. Refreshments will be served,
+              and copies of the book will be available for purchase.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Date: Friday 17th October 2025</li>
+              <li class="list-group-item">Time: 7.30 PM - 9.00 PM</li>
+              <li class="list-group-item">Venue: Singapore National Library (NBL)</li>
+              <a href="#" class="btn btn-warning">Register Here</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+  </main>
+
+
+  <footer>
+    <div id="footer">
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav").load("nav.html");
+    });
+
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar-expand-lg {
+  background-color: #2f4858;
+}
+
+.custom-spacing {
+  margin-right: 3rem;
+  /* Adjust as needed */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;
+  Push the button to the bottom
+}
+
+footer {
+  background-color: #2f4858;
+  padding: 10px 0;
+  padding: 1rem 0;
+}
+
+
+.social-icons a {
+  color: #f2f4f6;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+
+.carousel-inner {
+  height: 50vh;
+  /* Set height to 50% of the viewport height */
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form Styles */
+
+    .contact-form {
+      border: 2px solid #343a40;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background-color: #fff;8
+    }
+    .submit-btn {
+      position: relative;
+      left: 0;
+    }

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Silence Library offers a curated collection of eBooks, journals, and multimedia resources to support inclusive learning and professional development.">
+    <title>Silence Library</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- Header with logo, search panel & login -->
+    <header>
+        <nav class="navbar bg-body-white px-3">
+            <div class="container-fluid d-flex align-items-center flex-wrap">
+
+                <!-- Logo -->
+                <a class="navbar-brand me-2" href="index.html">
+                    <img src="/assets/Silence.webp" alt="Silence Library" height="40">
+                </a>
+
+                <!-- Search Panel -->
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control form-control-sm" type="search" placeholder="What are you looking for?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success btn-sm" type="submit">Search</button>
+                </form>
+
+                <!-- Login Button with spacing -->
+                <div class="ms-3">
+                    <a href="/login" class="btn btn-primary btn-sm">Login</a>
+                </div>
+            </div>
+    </header>
+
+    <nav>
+        <!-- Nav -->
+        <div id="nav">
+        </div>
+    </nav>
+
+    <main>
+        <!--book detail-->
+        <!--catalogue-->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ms-3 mt-5"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active mt-5"><a href="all_books.html">All Books</a></li>
+                <li class="breadcrumb-item active mt-5" aria-current="page">A Different Sky</li>
+            </ol>
+        </nav>
+
+        <div class="container-fluid pb-3 mx-auto">
+            <section id="bookList" class="pb-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"></div>
+                        <div class="card h-100">
+                            <img src="assets/frction2.webp" class="card-img-top" alt="journals">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"></div>
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">A Different Sky</h5>
+                                <p class="card-text"><b>ISBN: </b>9780099546245<br><b>Author: </b>Meira Chand<br><b>Year
+                                        Published: </b>2011<br><b>
+                                        Page Count: </b>496 <br><br><b>Description: </b>Singapore - a trading post where
+                                    different lives jostle and mix. It is 1927, and three young people are starting to
+                                    question whether this inbetween island can ever truly be their home. Mei Lan comes
+                                    from a famous Chinese dynasty but yearns to free herself from its stifling
+                                    traditions; ten-year-old Howard seethes at the indignities heaped on his fellow
+                                    Eurasians by the colonial British; Raj, fresh off the boat from India, wants only to
+                                    work hard and become a successful businessman. As the years pass, and the Second
+                                    World War sweeps through the east, with the Japanese occupying Singapore, the three
+                                    are thrown together in unexpected ways, and tested to breaking point.
+
+                                    Richly evocative, A Different Sky paints a scintillating panorama of thirty
+                                    tumultuous years in Singapore's history through the passions and struggles of
+                                    characters the reader will find it hard to forget.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"></div>
+                        <div class="card h-25">
+                            <div class="card-body">
+                                <h6 class="card-title">A Different Sky</h6>
+                                <button onclick="showConfirmation()" class="btn btn-warning">Loan</button>
+                                <a href="#" class="btn btn-outline-dark">Add to my list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+        });
+
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+
+        function showConfirmation() {
+            alert("Confirm");
+        }
+
+    </script>
+
+</body>
+
+</html>
